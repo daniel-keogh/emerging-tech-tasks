@@ -23,3 +23,7 @@ The Chi-squared test for independence is a statistical hypothesis test like a *t
 ### 3. Standard Deviation
 
 The standard deviation of an array of numbers `x` is calculated using `numpy` as `np.sqrt(np.sum((x - np.mean(x))**2)/len(x))`. However, Microsoft Excel has two different versions of the standard deviation calculation, `STDDEV.P` and `STDDEV.S`. The `STDDEV.P` function performs the above calculation but in the `STDDEV.S` calculation the division is by `len(x)-1` rather than `len(x)`. Research these Excel functions, writing a note in a Markdown cell about the difference between them. Then use `numpy` to perform a simulation demonstrating that the `STDDEV.S` calculation is a better estimate for the standard deviation of a population when performed on a sample. Note that part of this task is to figure out the terminology in the previous sentence.
+
+### 4. k-means Clustering with the Iris Dataset
+
+Use `scikit-learn` to apply k-means clustering to Fisher's famous Iris data set. You will easily obtain a copy of the data set on-line. Explain in a Markdown cell how your code works and how accurate it might be, and then explain how your model could be used to make predictions of species of iris.
